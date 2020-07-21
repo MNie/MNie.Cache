@@ -1,0 +1,30 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{3DEE922F-A153-43DC-86AD-EC87EDC92DB7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{B39CF456-4E6E-47DE-A97B-8C2642890E71}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MNie.Cache", "src\MNie.Cache\MNie.Cache.csproj", "{1A87AA4A-05CD-4E2C-AE9B-7A7EF6BBD5EC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MNie.Cache.Tests", "tests\MNie.Cache.Tests\MNie.Cache.Tests.csproj", "{EC050C40-2C72-47B3-A434-8F75ABCBEE88}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{1A87AA4A-05CD-4E2C-AE9B-7A7EF6BBD5EC} = {3DEE922F-A153-43DC-86AD-EC87EDC92DB7}
+		{EC050C40-2C72-47B3-A434-8F75ABCBEE88} = {B39CF456-4E6E-47DE-A97B-8C2642890E71}
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1A87AA4A-05CD-4E2C-AE9B-7A7EF6BBD5EC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1A87AA4A-05CD-4E2C-AE9B-7A7EF6BBD5EC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1A87AA4A-05CD-4E2C-AE9B-7A7EF6BBD5EC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1A87AA4A-05CD-4E2C-AE9B-7A7EF6BBD5EC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EC050C40-2C72-47B3-A434-8F75ABCBEE88}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EC050C40-2C72-47B3-A434-8F75ABCBEE88}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EC050C40-2C72-47B3-A434-8F75ABCBEE88}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EC050C40-2C72-47B3-A434-8F75ABCBEE88}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
