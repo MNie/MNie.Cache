@@ -11,7 +11,7 @@ namespace MNie.Cache.Remote
     using ResultType.Factories;
     using ResultType.Results;
     using static Serialization.ByteSerializer;
-    
+
     public class RemoteCacheRepository<TItem, TKey> : IRemoteCache<TItem, TKey>
     {
         private readonly IDistributedCache _distributedCache;
@@ -19,7 +19,7 @@ namespace MNie.Cache.Remote
         public RemoteCacheRepository(IDistributedCache distributedCache) => _distributedCache = distributedCache;
 
         private static string GetKey(TKey id) => $"{typeof(TItem).Name}:{id}";
-        
+
         public async Task<IResult<TItem>> GetAsync(TKey id, CancellationToken token = default)
         {
             try
@@ -40,7 +40,7 @@ namespace MNie.Cache.Remote
             catch (Exception e)
             {
                 return ResultFactory.CreateFailure<TItem>(
-                    $"Error occured while trying to get {nameof(TItem)} entry with id: {id} from cache. {e.Message}");  
+                    $"Error occured while trying to get {nameof(TItem)} entry with id: {id} from cache. {e.Message}");
             }
         }
 

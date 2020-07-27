@@ -1,5 +1,7 @@
 // ReSharper disable IdentifierTypo
 
+using System;
+
 namespace MNie.Cache
 {
     using System.Threading;
@@ -12,8 +14,12 @@ namespace MNie.Cache
     {
         Task<IResult<Unit>> UpsertAsync(TKey id, TItem item, DistributedCacheEntryOptions opt, CancellationToken token = default);
     }
-    public interface ILocalCache<TItem, in TKey> : ICacheRepository<TItem, TKey> { }
-    
+
+    public interface ILocalCache<TItem, in TKey> : ICacheRepository<TItem, TKey>
+    {
+        Task<IResult<Unit>> DeleteAllAsync(CancellationToken token = default);
+    }
+
     public interface ICacheRepository<TInput, in TKey>
     {
         Task<IResult<TInput>> GetAsync(TKey id, CancellationToken token = default);
